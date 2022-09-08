@@ -13,10 +13,8 @@ input.forEach((inp, i) => {
 document.querySelector('#one').addEventListener('paste', (event) => {
     navigator.clipboard.readText().then((clipText) =>{
         let newArr = clipText.split('');
-        newArr.forEach((el) => {
-            input.forEach(function(element) {
-                element.value = el;
-            })
+        newArr.forEach((el,i) => {
+            input[i].value = el;
         })
     });
  });
