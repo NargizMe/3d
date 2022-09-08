@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+}
+
+  span{
+    display: block;
+    text-align: center;
+  }
+  p{
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+  }
+.form{
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+}
+.input-container{
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    border: 1px solid skyblue;
+    font-size: 35px;
+    margin: 8px ;
+    padding: 5px;
+    width: 60px;
+    height: 100px;
+    text-align: center;
+}
